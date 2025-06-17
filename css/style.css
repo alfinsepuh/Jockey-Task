@@ -1,0 +1,359 @@
+/* Simple CSS for JokiTugas Website */
+
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f8f8;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Header */
+header {
+  background-color: #2c3e50;/* ini adalh edit ganti warna pada layanan paling atas   */
+  color: white;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+
+.logo span {
+  color: #1abc9c;/* ini adalh edit warna pada tulisan "TUGAS  */
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 1.5rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+  color: #1abc9c;/* ini saya edit ketika kita kelik beranda, layanan tentang kontak dia warna hijau */
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../becgroun dasar visi misi.png') no-repeat center center/cover; /* Modifikasi: Menambah background pada layar solusi terbaik layar ke 2*/
+  color: white;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  background: #1abc9c;/* ini saya edit adalh warna utam dari LIAHAT layanan */
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+  background: #1abc9c;/* ini adalah sya edit ketika mos di arahkan dia ke tulian LIHAT LAYANAN KAMI DIA WANNANYA GITU */
+  transform: translateY(-3px);
+}
+
+/* Sections */
+section {
+  padding: 3rem 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #1abc9c;/* ini saya edit garis bawah pada kontak kami */
+  margin: 0.5rem auto;
+}
+
+/* Services */
+.services {
+  background: white;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.service-card {
+  background-image: url(../images/foto%20sepuh.jpg);/* di sini saya tambahakan gambar bagron langit di bagian layanan kami */
+  border-radius: 5px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+.service-icon {
+  font-size: 2.5rem;
+  color: #1abc9c;/*  */
+  margin-bottom: 1rem;
+}
+
+.service-title {
+  margin-bottom: 1rem;
+}
+
+/* About */
+.about {
+  background: #f8f8f8;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.about-text h2 {
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  margin-bottom: 1rem;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* Contact */
+.contact {
+  background: white;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.contact-icon {
+  font-size: 1.5rem;
+  color: #4e54c8;
+}
+
+.contact-form {
+  background: #f8f8f8;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+footer .logo {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+}
+
+footer .container {
+ display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.footer-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 1rem 0;
+}
+
+.footer-links li {
+  margin: 0 1rem;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #ff6b6b;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  
+  .about-content, .contact-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .about-image {
+    order: -1;
+  }
+}
+/* saya menambahkan icon kotak ketika kursor di arahkan ke tulisan */
+.contact-item ol li a:hover {
+  background-color:#1abc9c;;
+  box-shadow: 0 4px 10px rgba(230, 196, 3, 0.2);
+  transform: translateX(-2px);
+}
+.about-image video {/*ini adalah yang saya edit tambah vidioTambahkan.about-imagevideo*/
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+
+.slide-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideIn 1.2s ease-out forwards; /* DAVID Saya menambahkan animasi text yang muncul pelan-pelan dari bawah*/
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.logo { /*DAVID ini saya tambahkan codenya agar terhubung dgn code di html ini untuk logo JokiTugas muncul di samping pojok kiri*/
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.logo-img {
+ width: 30px;
+ height: 30px;
+ margin-right: 10px;
+}
+
+.promo-section { /*alfin menambah bagian promo ini agar menampilkan promo box nya */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px 20px;
+  background: #fff;
+}
+.promo-box {
+  background: #fefefe;
+  border: 2px dashed #00cc88;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.promo-box h2 {
+  color: #00aa66;
+  font-size: 2rem;
+}
+.promo-box .kode {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 10px;
+  background: #e0f7f1;
+  padding: 5px 10px;
+  display: inline-block;
+  border-radius: 5px;
+}
